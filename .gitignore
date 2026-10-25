@@ -1,0 +1,10 @@
+# VS Code editor settings & workspace files
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local environment / secrets
+*.env
+.env*
