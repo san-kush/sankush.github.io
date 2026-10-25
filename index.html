@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sankush Technologies | Strategy, Innovation & AI Engineering at Scale</title>
-    <link rel="icon" type="image/png" href="sankush-128x128.png">
+    <link rel="icon" type="image/png" href="media/sankush-128x128.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & Space Grotesk -->
@@ -164,50 +164,6 @@
 </head>
 <body class="antialiased selection:bg-cyan-400 selection:text-slate-950">
 
-    <!-- Hidden Reusable SVG Defs for the Faceted 3D "SK" Upward-Arrow Sankush Logo -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-            <linearGradient id="sk-cyan-bright" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#0096c7" />
-                <stop offset="100%" stop-color="#38e4ff" />
-            </linearGradient>
-            <linearGradient id="sk-royal-mid" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00b4d8" />
-                <stop offset="100%" stop-color="#0f5bb5" />
-            </linearGradient>
-            <linearGradient id="sk-navy-deep" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0f5bb5" />
-                <stop offset="100%" stop-color="#07254d" />
-            </linearGradient>
-            <linearGradient id="sk-arrow-glow" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#0f5bb5" />
-                <stop offset="50%" stop-color="#00b4d8" />
-                <stop offset="100%" stop-color="#48cae4" />
-            </linearGradient>
-
-            <!-- High-Precision Faceted 3D "SK" Upward Arrow Symbol matching sankush-128x128.png -->
-            <g id="sankush-sk-mark">
-                <!-- Left 'S' Faceted Geometric Ribbon -->
-                <polygon points="44,28 64,42 52,54 44,44" fill="url(#sk-royal-mid)" />
-                <polygon points="15,47 44,28 44,44 27,56" fill="url(#sk-cyan-bright)" />
-                <polygon points="15,47 27,56 27,73 15,65" fill="url(#sk-navy-deep)" />
-                <polygon points="15,65 27,56 66,82 54,91" fill="url(#sk-cyan-bright)" />
-                <polygon points="15,65 54,91 54,104 15,78" fill="url(#sk-royal-mid)" />
-                <polygon points="15,78 38,93 15,108" fill="url(#sk-navy-deep)" />
-                <polygon points="66,82 54,91 54,106 66,97" fill="url(#sk-cyan-bright)" />
-                <polygon points="54,91 66,97 46,122 18,113" fill="url(#sk-navy-deep)" />
-                <polygon points="18,113 46,96 54,91 46,122" fill="url(#sk-royal-mid)" />
-                <!-- Right 'K' + Upward-Right 3D Arrow -->
-                <polygon points="50,65 92,24 100,32 58,73" fill="url(#sk-cyan-bright)" />
-                <polygon points="58,73 100,32 106,38 65,79" fill="url(#sk-royal-mid)" />
-                <polygon points="72,18 115,9 100,32" fill="url(#sk-cyan-bright)" />
-                <polygon points="115,9 107,52 100,32" fill="url(#sk-royal-mid)" />
-                <polygon points="72,76 84,64 108,104 92,104" fill="url(#sk-navy-deep)" />
-                <polygon points="84,64 91,69 108,104" fill="url(#sk-cyan-bright)" />
-            </g>
-        </defs>
-    </svg>
-
     <!-- Interactive Background Neural Network Canvas (Sankush Cyan & Royal Blue Particles) -->
     <canvas id="neural-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-70"></canvas>
 
@@ -225,9 +181,7 @@
                 <!-- Sankush Technologies Brand Logo (Uses sankush-128x128.png with crisp SVG companion fallback) -->
                 <button onclick="navigateTo('home')" class="flex items-center gap-3.5 text-left group focus:outline-none">
                     <div class="relative w-12 h-12 rounded-xl bg-white/95 p-1.5 shadow-lg shadow-cyan-500/25 border border-cyan-400/40 group-hover:scale-105 transition-transform flex items-center justify-center overflow-hidden">
-                        <svg viewBox="0 0 128 128" class="w-full h-full" aria-hidden="true">
-                            <use href="#sankush-sk-mark"></use>
-                        </svg>
+                        <img src="media/sankush-128x128.png" alt="Sankush Technologies Logo" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white flex items-center gap-2">
@@ -567,7 +521,7 @@
                                     <div class="flex items-center justify-between border-b border-white/10 pb-3">
                                         <div class="flex items-center gap-2.5">
                                             <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center">
-                                                <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
+                                                <img src="media/sankush-128x128.png" alt="SK" class="w-full h-full object-contain">
                                             </div>
                                             <div>
                                                 <div class="text-xs font-bold text-white tracking-wide">SANKUSH NEURAL CORE</div>
@@ -1331,7 +1285,7 @@
                     <div class="lg:col-span-6 space-y-8">
                         <div class="flex items-center gap-4">
                             <div class="w-16 h-16 rounded-2xl bg-white p-2 shadow-xl shadow-cyan-500/20 border border-cyan-400/40 flex items-center justify-center shrink-0">
-                                <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
+                                <img src="media/sankush-128x128.png" alt="Sankush Technologies" class="w-full h-full object-contain">
                             </div>
                             <div>
                                 <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">About Us & Direct Contact</span>
@@ -1479,7 +1433,7 @@
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-white p-1.5 flex items-center justify-center shadow-md shadow-cyan-500/20">
-                            <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
+                            <img src="media/sankush-128x128.png" alt="Sankush Technologies" class="w-full h-full object-contain">
                         </div>
                         <span class="font-display font-bold text-lg text-white">SANKUSH <span class="text-gradient">TECHNOLOGIES</span></span>
                     </div>
