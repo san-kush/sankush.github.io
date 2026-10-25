@@ -237,8 +237,7 @@
                 <!-- Sankush Technologies Brand Logo (Uses sankush-128x128.png with crisp SVG companion fallback) -->
                 <button onclick="navigateTo('home')" class="flex items-center gap-3.5 text-left group focus:outline-none">
                     <div class="relative w-12 h-12 rounded-xl bg-white/95 p-1.5 shadow-lg shadow-cyan-500/25 border border-cyan-400/40 group-hover:scale-105 transition-transform flex items-center justify-center overflow-hidden">
-                        <img src="sankush-128x128.png" alt="Sankush Technologies Logo" class="w-full h-full object-contain" style="display:none" onerror="this.style.display='none';">
-                        <svg viewBox="0 0 128 128" class="w-full h-full" aria-hidden="true" id="nav-sk-svg">
+                        <svg viewBox="0 0 128 128" class="w-full h-full" aria-hidden="true">
                             <use href="#sankush-sk-mark"></use>
                         </svg>
                     </div>
@@ -580,7 +579,6 @@
                                     <div class="flex items-center justify-between border-b border-white/10 pb-3">
                                         <div class="flex items-center gap-2.5">
                                             <div class="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center">
-                                                <img src="sankush-128x128.png" alt="SK" class="w-full h-full object-contain" style="display:none" onerror="this.style.display='none';">
                                                 <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
                                             </div>
                                             <div>
@@ -1345,7 +1343,6 @@
                     <div class="lg:col-span-6 space-y-8">
                         <div class="flex items-center gap-4">
                             <div class="w-16 h-16 rounded-2xl bg-white p-2 shadow-xl shadow-cyan-500/20 border border-cyan-400/40 flex items-center justify-center shrink-0">
-                                <img src="sankush-128x128.png" alt="Sankush Technologies" class="w-full h-full object-contain" style="display:none" onerror="this.style.display='none';">
                                 <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
                             </div>
                             <div>
@@ -1494,7 +1491,6 @@
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-white p-1.5 flex items-center justify-center shadow-md shadow-cyan-500/20">
-                            <img src="sankush-128x128.png" alt="Sankush Technologies" class="w-full h-full object-contain" style="display:none" onerror="this.style.display='none';">
                             <svg viewBox="0 0 128 128" class="w-full h-full"><use href="#sankush-sk-mark"></use></svg>
                         </div>
                         <span class="font-display font-bold text-lg text-white">SANKUSH <span class="text-gradient">TECHNOLOGIES</span></span>
@@ -2092,29 +2088,10 @@
             animate();
         }
 
-        // Show PNG logo when available, SVG is default fallback
-        function initLogoFallback() {
-            document.querySelectorAll('img[src="sankush-128x128.png"]').forEach(function(img) {
-                var svg = img.nextElementSibling;
-                // If PNG loads successfully, show it and hide SVG
-                img.addEventListener('load', function() {
-                    img.style.display = '';
-                    if (svg && svg.tagName.toLowerCase() === 'svg') {
-                        svg.style.display = 'none';
-                    }
-                });
-                // PNG failed — SVG is already visible by default, nothing extra needed
-                img.addEventListener('error', function() {
-                    img.style.display = 'none';
-                });
-            });
-        }
-
         window.onload = function () {
             document.getElementById('footer-year').textContent = new Date().getFullYear();
             initNeuralCanvas();
             triggerScrollReveal();
-            initLogoFallback();
         };
     </script>
 </body>
